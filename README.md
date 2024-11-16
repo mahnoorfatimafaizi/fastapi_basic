@@ -1,31 +1,33 @@
-# Create a new project 
+# Steps
+
+## Create a new project 
 poetry new fastapi_01
 
-# Change directory
+## Change directory
 cd fastapi_01
 
-# Open Vs Code 
+## Open Vs Code 
 code .
 
-# Download packages 
+## Download packages 
 poetry add fastapi 
 poetry add "uvicorn[standard]"
 poetry add pytest
 poetry add fastapi httpx
 
 
-# Actice Env in main.py
+## Actice Env in main.py
 poetry shell 
 
 
-# Run
+## Run
 poetry run uvicorn fastapi_01.main:app --reload
  http://127.0.0.1:8000
 
-# Test
+## Test
 poetry run pytest -v 
 
-# Browser 
+ 
 
 
 
